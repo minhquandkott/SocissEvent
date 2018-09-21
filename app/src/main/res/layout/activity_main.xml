@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="LẬP TRÌNH SỰ KIỆN"
+                android:gravity="center"
+                android:background="@color/MauNen"
+                android:textColor="#FFFFFF"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_below="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/textA"
+                android:text="Hệ số a:"
+                android:layout_weight="3"/>
+            <EditText
+                android:id="@+id/editA"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_below="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/textB"
+                android:text="Hệ số b:"
+                android:layout_weight="3"/>
+            <EditText
+                android:id="@+id/editB"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_below="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textKQ"
+                android:layout_height="30dp"
+                android:layout_width="match_parent"
+                android:background="@color/MauNen"
+                android:textColor="#FFFFFF"/>
+
+        </TableRow>
+        <Button
+            android:id="@+id/btnKQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/row4"
+            android:text="TỔNG 2 Số"
+            android:onClick="btnKQ"
+            />
+
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
